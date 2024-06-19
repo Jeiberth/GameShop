@@ -1,0 +1,64 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    z-index: 1000 !important;
+    background: transparent;
+}
+
+.menu {
+    font-size: 1.8 rem;
+    color: #ffffff;
+}
+
+.userItems {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.login {
+display: inline-flex;
+align-items: center;
+gap: 20px;
+color: #ffffff;
+box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.icon {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.5 rem;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.userItems .icon .like,
+.userItems .icon .cart {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 0.8 rem;
+    font-weight: 800;
+    height: 20px;
+    padding: 3px;
+    color: #ffffff;
+    background: var(--second);
+    border-radius: 50%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
