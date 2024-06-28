@@ -36,7 +36,7 @@ import Main from './pages/Main';
 import Register from './pages/Register'; 
 import Login from './pages/Login';
 import axios from 'axios';
-
+import { Toaster } from 'react-hot-toast';
 axios.defaults.baseURL = 'http://localhost:8000'
 axios.defaults.withCredentials = true;
 
@@ -48,6 +48,7 @@ function App() {
 
   return (
     <AppContext.Provider value={{ library, setLibrary, bag, setBag }}>
+    <Toaster position='bottom-right' toastOptions={{duration: 2000}} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/register" element={<Register />} />
