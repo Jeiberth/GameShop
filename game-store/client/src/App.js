@@ -35,6 +35,8 @@ import { Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
 import Register from './pages/Register'; 
 import Login from './pages/Login';
+import Success from './pages/Success'; // Import Success page
+import Cancel from './pages/Cancel'; // Import Cancel page
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
 axios.defaults.baseURL = 'http://localhost:8000'
@@ -53,6 +55,8 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/success" element={<Success />} /> {/* Add Success route */}
+        <Route path="/cancel" element={<Cancel />} /> {/* Add Cancel route */}
       </Routes>
     </AppContext.Provider>
   );

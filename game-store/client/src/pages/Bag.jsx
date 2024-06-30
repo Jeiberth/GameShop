@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './bag.css';
 import ShopBagItem from '../components/ShopBagItem';
+import Checkout from '../components/Checkout'; // Import the Checkout component
+import PaymentForm from '../components/PaymentForm'; // Import the PaymentForm component
+
 
 function Bag({ games, reference }) {
   const [total, setTotal] = useState(0);
+  const [showPayment, setShowPayment] = useState(false); // State to show/hide the payment form
+
 
   const handleTotalPayment = () => {
     let total = games
@@ -17,6 +22,13 @@ function Bag({ games, reference }) {
   useEffect(() => {
     setTotal(handleTotalPayment());
   }, [games]);
+
+  const items = games.map(game => ({
+    name: game.name,
+    price: game.metacritic,
+    quantity: 1,
+  }));
+  
 
   return (
     <section id="bag" className="bag" ref={reference}>
@@ -56,9 +68,7 @@ function Bag({ games, reference }) {
               <div className="col-lg-10 d-flex justify-content-end">
                 <div className="payment">
                   Total: ${total}
-                  <a href="#">
-                    Check out <i class="bi bi-wallet-fill"></i>
-                  </a>
+                  <Checkout items={items} /> {/* Use Checkout component */}
                 </div>
               </div>
             </div>
