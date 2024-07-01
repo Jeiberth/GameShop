@@ -23,7 +23,9 @@ app.use(cors({
 }));
 
 //routes
-app.use('/', require('./routes/authRoutes'))
+//app.use('/', require('./routes/authRoutes'));
+//v.1.2
+app.use('/auth', require('./routes/authRoutes')); // Changed to '/auth' for better structure
 app.use('/payments', serverRoutes); // Use server.js for Stripe payments
 
 const port = 8000;
