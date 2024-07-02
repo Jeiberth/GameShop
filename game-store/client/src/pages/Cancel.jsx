@@ -5,7 +5,7 @@ const Cancel = () => {
 return (
     <div>
     <h1>Payment Cancelled</h1>
-    <p>Your payment has been cancelled. You can try again later.</p>
+    <p>Your payment has been cancelled. Try again later.</p>
     </div>
 );
 };

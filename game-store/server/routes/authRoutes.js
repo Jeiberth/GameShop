@@ -20,7 +20,7 @@ router.post("/register", registerUser);
 router.post("/login", loginUser);
 
 module.exports = router; */
-
+//Defines routes for testing/user registration/user login.
 //v.1.2
 const express = require('express');
 const router = express.Router();

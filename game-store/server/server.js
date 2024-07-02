@@ -1,20 +1,20 @@
 const express = require('express');
 const Stripe = require('stripe');
-const cors = require('cors');
+const cors = require('cors'); //handling Cross-Origin Resource Sharing.
 require('dotenv').config();
 
 const app = express();
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Replace with your frontend URL
+  origin: 'http://localhost:3000', // Replace with your frontend URL if another than localhost
   credentials: true,
 }));
 
 app.use(express.json());
 app.options('*', cors()); // Handle preflight requests
 
-app.post('/create-checkout-session', async (req, res) => {
+app.post('/create-checkout-session', async (req, res) => { //create a Stripe checkout session.
   const { items } = req.body;
 
   const line_items = items.map((item) => ({
