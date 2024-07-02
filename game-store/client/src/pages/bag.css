@@ -1,10 +1,11 @@
 .shopBagTable {
   margin-top: 50px;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px 60px;
   background: var(--bgColor);
-  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
+  5px 5px 15px rgba(0, 0, 0, 0.733);
+
 }
 
 .shopBagTable thead tr {
@@ -32,11 +33,12 @@
   padding: 10px 20px;
   text-decoration: none;
   color: #ffffff;
-  border-radius: 15px;
+  border-radius: 10px 60px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
   background: var(--bgColor);
-  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
+  5px 5px 15px rgba(0, 0, 0, 0.733);
+
 }
