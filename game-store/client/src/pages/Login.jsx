@@ -14,7 +14,7 @@ function Login() {
         e.preventDefault()
           const {email, password} = data
           try {
-            const {data} = await axios.post('/login', {
+            const {data} = await axios.post('http://localhost:8000/auth/login', {
               email,
               password
             });
@@ -22,7 +22,7 @@ function Login() {
               toast.error(data.error)
             } else {
               setData({});
-              navigate('/')
+              navigate('/') // Redirect to the main page after successful login
             }
           } catch (error) {
             
