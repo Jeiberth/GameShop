@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import axios from 'axios';
 import {toast} from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
+
 
 function Login() {
     const navigate = useNavigate()
@@ -29,13 +31,14 @@ function Login() {
           }
         }
   return (
-    <div>
-        <form onSubmit={loginUser}>
-        <label>Email</label>
-        <input type="email" placeholder='Enter Email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
-        <label>Password</label>
-        <input type="password" placeholder='Enter Password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})} />
-        <button type='submit'>Login</button>
+    <div id="cont">
+        <form id="form" onSubmit={loginUser}>
+        <label id="Login">Log In</label>
+        <label id="emailtext">Email</label>
+        <input id="emailinput" type="email" placeholder='Enter Email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
+        <label id="passwordtext" >Password</label>
+        <input id="passwordinput" type="password" placeholder='Enter Password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})} />
+        <button id="submit" type='submit'>Login</button>
 
         </form>
     </div>

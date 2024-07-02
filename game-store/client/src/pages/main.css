@@ -4,12 +4,8 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 30px;
-  border: 8px solid var(--bgColor);
-  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.15),
-    5px 5px 15px rgba(0, 0, 0, 0.35),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
-    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,11 +18,11 @@ main {
   position: relative;
   width: 80%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 10px 60px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: var(--bgColor);
-  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
+    5px 5px 15px rgba(0, 0, 0, 0.733);
   transition: 1s;
 }
 
@@ -60,13 +56,14 @@ section.active {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   main {
     padding: 20px;
   }
 
   .banner {
-    width: 100%;
+    width: 89%;
+    left: 100px;
   }
 
   .banner.active {
@@ -74,6 +71,6 @@ section.active {
   }
 
   section {
-    padding: 5px;
+    padding: 20px;
   }
 }
