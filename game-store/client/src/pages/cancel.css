@@ -4,7 +4,7 @@
     top: 100px;
     transform: translateX(-50%);
     width: 400px;
-    height: 200px;
+    height: 250px;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
     5px 5px 15px rgba(0, 0, 0, 0.733);
     border-radius: 10px 60px;
@@ -36,4 +36,9 @@
     font-weight: 400; 
 }
 
+#HP{
+    position: inherit;
+    left: 48%;
+    cursor: pointer;
+}
 
