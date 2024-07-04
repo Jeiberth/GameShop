@@ -4,7 +4,7 @@
     top: 100px;
     transform: translateX(-50%);
     width: 400px;
-    height: 400px;
+    height: 420px;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
     5px 5px 15px rgba(0, 0, 0, 0.733);
     border-radius: 10px 60px;
@@ -19,11 +19,12 @@
     align-content: center;
 }
 
-#Login{
+#Loginn{
     position: relative;
     font-size: 3em;
     left: 25%;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 #emailinput{
@@ -44,4 +45,14 @@
     position: relative;
     width: 100px;
     left: 35%;
+}
+
+#Registerr{
+    position: relative;
+    left: 25%;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: .8em;
+    cursor: pointer;
+    text-decoration: underline;
 }

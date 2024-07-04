@@ -1,0 +1,39 @@
+#contp{
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
+    5px 5px 15px rgba(0, 0, 0, 0.733);
+    border-radius: 10px 60px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+#sf{
+    position: relative;
+    width: 50px;
+    height: auto;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Acs{
+    position: relative;
+    white-space: nowrap;
+    font-size: 2em;
+}
+
+#reason{
+    text-decoration: underline;   
+    font-weight: 400; 
+}
+
+

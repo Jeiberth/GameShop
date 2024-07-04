@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import './Register.css'
 
 function Register() {
     const navigate = useNavigate()
@@ -29,8 +30,13 @@ function Register() {
           console.log(error);
         }
     }
+
+    const handleLoginClick = () => {
+      navigate('/Login'); // Navigate to the Register page
+    };
+
   return (
-    <div id="cont">
+    <div id="contt">
       <form  id="form" onSubmit={registerUser}>
       <label id="Register">Register</label>
       <label id="nametext" >Name</label>
@@ -40,6 +46,8 @@ function Register() {
       <label id="passwordtext" >Password</label>
       <input id="passwordinput" type="password" placeholder='Enter password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})} />
       <button id="submit" type='submit'>Submit</button>
+      <label onClick={handleLoginClick} id="Login" >Already have an account?</label>
+
       </form>
     </div>
   )

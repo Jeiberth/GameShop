@@ -42,3 +42,12 @@
   5px 5px 15px rgba(0, 0, 0, 0.733);
 
 }
+
+.payment button{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px 40px;
+    border-radius: 20px 40px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
+    5px 5px 15px rgba(0, 0, 0, 0.733);
+}

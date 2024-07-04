@@ -30,16 +30,24 @@ function Login() {
             
           }
         }
+
+
+        
+        const handleRegiterClick = () => {
+          navigate('/Register'); // Navigate to the Register page
+        };
+
+
   return (
     <div id="cont">
         <form id="form" onSubmit={loginUser}>
-        <label id="Login">Log In</label>
+        <label id="Loginn">Log In</label>
         <label id="emailtext">Email</label>
         <input id="emailinput" type="email" placeholder='Enter Email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
         <label id="passwordtext" >Password</label>
         <input id="passwordinput" type="password" placeholder='Enter Password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})} />
         <button id="submit" type='submit'>Login</button>
-
+        <label id="Registerr" onClick={handleRegiterClick}>Don't have an account?</label>
         </form>
     </div>
   )
