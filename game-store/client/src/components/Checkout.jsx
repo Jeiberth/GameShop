@@ -9,6 +9,8 @@ const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 const Checkout = ({ items }) => {
 const handleCheckout = async () => {
+    console.log(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+
     const stripe = await stripePromise;
 
     try {

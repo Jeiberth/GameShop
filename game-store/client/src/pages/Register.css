@@ -1,0 +1,53 @@
+#cont{
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 500px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.774),
+    5px 5px 15px rgba(0, 0, 0, 0.733);
+    border-radius: 10px 60px;
+    padding: 30px;
+    color: white;
+}
+
+#form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#Register{
+    position: relative;
+    font-size: 3em;
+    left: 25%;
+    margin-bottom: 20px;
+}
+
+#nameinput{
+    height: 40px;
+    border-radius: 5px 20px;
+    margin-bottom: 20px;
+}
+
+#emailinput{
+    height: 40px;
+    border-radius: 5px 20px;
+    margin-bottom: 40px;
+}
+
+#passwordinput{
+    height: 40px;
+    border-radius: 5px 20px;
+    margin-bottom: 40px;
+}
+
+#submit{
+    height: 40px;
+    border-radius: 5px 20px;
+    position: relative;
+    width: 100px;
+    left: 35%;
+}
