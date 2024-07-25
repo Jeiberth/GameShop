@@ -1,0 +1,49 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    height: 90%;
+  }
+  
+  .main {
+    position: relative;
+    width: 90%;
+
+    margin: auto;
+    overflow: hidden;
+    top: 0px;
+    background: var(--bgColor);
+  }
+  .main p{ 
+    font-weight: 200;
+  }
+  #overview {
+    font-size: 70px;
+  }
+  
+  .main h2 {
+    color: white;
+    text-align: center;
+    justify-self: center;
+  }
+  
+  .main h3 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .main pre {
+    background: var(--c3);
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow: auto;
+  }
+  
+  .main code {
+    color: #1a8300;
+  }
+  

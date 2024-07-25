@@ -7,6 +7,7 @@ import Home from './Home';
 import Categories from './Categories';
 import MyLibrary from './MyLibrary';
 import Bag from './Bag';
+import APIDocumentation from './APIDocumentation';
 
 function Main() {
   const { library, bag } = useContext(AppContext);
@@ -17,7 +18,7 @@ function Main() {
   const categoriesRef = useRef();
   const libraryRef = useRef();
   const bagRef = useRef();
-
+  const ApiRef = useRef();
   const sections = [
     {
       name: 'home',
@@ -39,22 +40,31 @@ function Main() {
       ref: bagRef,
       active: false,
     },
+    {
+      name: 'ApiDoc',
+      ref: ApiRef,
+      active: false,
+    }
   ];
-
+  
   const handleToggleActive = () => {
     setActive(!active);
   };
-
+  
   const handleSectionActive = target => {
     sections.map(section => {
-      section.ref.current.classList.remove('active');
-      if (section.ref.current.id === target) {
-        section.ref.current.classList.add('active');
+      if (section.ref.current) {
+        section.ref.current.classList.remove('active');
+        if (section.ref.current.id === target) {
+          section.ref.current.classList.add('active');
+        }
+      } else {
+        console.error(`Element for section ${section.name} not found`);
       }
       return section;
     });
   };
-
+  
   const fetchData = () => {
     fetch('https://api.rawg.io/api/games?key=a9b7e19e293d43d29410cd08c99fd2ef')
       .then(response => {
@@ -95,6 +105,7 @@ function Main() {
             <MyLibrary games={library} reference={libraryRef} />
           )}
           {games && games.length > 0 && <Bag games={bag} reference={bagRef} />}
+          {games && games.length > 0 && <APIDocumentation reference={ApiRef}/>}
         </div>
       </div>
     </main>

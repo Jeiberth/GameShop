@@ -30,6 +30,13 @@ const navListData = [
     icon: "bi-cart",
     active: false,
   },
+  {
+    _id: 5,
+    target: "ApiDoc",
+    name: "ApiDoc",
+    icon: "bi bi-file-earmark-richtext",
+    active: false,
+  },
 ];
 
 export default navListData;
