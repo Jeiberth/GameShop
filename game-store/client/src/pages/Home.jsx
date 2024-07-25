@@ -21,9 +21,9 @@ function Home({ games, reference }) {
           </div>
         </div>
         <div className="row cards">
-          {games.slice(0, 4).map(game => (
-            <GameCard key={game._id} game={game} />
-          ))}
+            {games.slice(0, 30).map(game => (
+              <GameCard key={game._id} game={game} />
+            ))}
         </div>
       </div>
     </section>
