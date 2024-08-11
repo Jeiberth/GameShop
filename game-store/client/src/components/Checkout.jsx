@@ -5,11 +5,11 @@ import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import axios from 'axios';
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe('pk_test_51PVUrwP15xt7Xmf3v6K7Z2NKIET2fE0t3EXPoHImNhoVqI7RGMGW9U3BtajNr8tCrQLxBP29frmR2torKKUkbWYP003FyzLQuK');
 
 const Checkout = ({ items }) => {
 const handleCheckout = async () => {
-    console.log(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+    console.log('pk_test_51PVUrwP15xt7Xmf3v6K7Z2NKIET2fE0t3EXPoHImNhoVqI7RGMGW9U3BtajNr8tCrQLxBP29frmR2torKKUkbWYP003FyzLQuK');
 
     const stripe = await stripePromise;
 
