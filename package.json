@@ -1,0 +1,10 @@
+{
+    "name": "game-shop",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "cd game-store && npm run build-client && npm run build-server",
+      "build-client": "cd game-store/client && npm install && npm run build",
+      "build-server": "cd game-store/server && npm install"
+    }
+  }
+  
