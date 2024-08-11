@@ -14,7 +14,7 @@ const handleCheckout = async () => {
     const stripe = await stripePromise;
 
     try {
-    const response = await axios.post('https://esktcf8xcl.execute-api.us-east-2.amazonaws.com/prod/payments/create-checkout-session', { items }, {
+    const response = await axios.post('https://x0m7yww1bl.execute-api.us-east-2.amazonaws.com/payments/create-checkout-session', { items }, {
         headers: {
         'Content-Type': 'application/json',
         },

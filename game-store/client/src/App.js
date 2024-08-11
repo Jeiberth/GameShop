@@ -19,7 +19,7 @@ import Name from './pages/api/name.jsx';
 import Genre from './pages/api/Genre';
 import Rating from './pages/api/Rating';
 import Developers from './pages/api/Developers';
-axios.defaults.baseURL = 'https://esktcf8xcl.execute-api.us-east-2.amazonaws.com/prod'
+axios.defaults.baseURL = 'https://x0m7yww1bl.execute-api.us-east-2.amazonaws.com/'
 axios.defaults.withCredentials = true;
 
 export const AppContext = React.createContext();
